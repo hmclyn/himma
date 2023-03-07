@@ -14,15 +14,15 @@ else{
 
 $kelas_nasabah = "kelas 2";
 
- if ($kelas_nasabah = "kelas vip"){
+ if ($kelas_nasabah == "kelas vip"){
     echo "kartu atm, buku tabungan, akses m-banking , dan prioritas";
  }
-else if ($kelas_nasabah = "kelas 1"){
+elseif ($kelas_nasabah == "kelas 1"){
     echo "kartu atm, akses m-banking, buku tabungan";
 }
 else {
     echo "kartu atm, buku tabungan";
-}
+}                
  
 
 ?>
@@ -35,3 +35,21 @@ echo "$i";
 ?>
 
 <br> 
+
+ <?php
+ 
+ for($i = 3; $i <= 60; $i+= 3){
+    echo "$i";
+    }
+
+ ?>
+
+ <br>
+
+ <?php
+ 
+ $Perusahaan =["Toyota", "Daihatsu", "Honda", "Ford", "Ferari"];
+ echo $Perusahaan[4] . "<br>";
+ echo $Perusahaan[1] . " dan " . $Perusahaan[2]; 
+ 
+ ?>
